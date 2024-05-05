@@ -118,3 +118,63 @@ footer a:hover {
     font-size: 10px;
   }
 }
+.section-A {
+  background-color: rgb(232, 235, 235);
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.section-A img {
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.section-A h6 {
+  margin-left: 30px;
+  margin-top: 5px;
+  font-family: "Times New Roman", Times, serif;
+  opacity: 50%;
+  font-size: 15px;
+  color: rgb(31, 22, 22);
+}
+
+.section-A h2 {
+  margin-top: 60px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.section-A p {
+  margin-right: 15px;
+}
+
+@media (max-width: 900px) {
+  .section-A img {
+    width: 250px;
+    height: 150px;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 0;
+  }
+
+  .section-A {
+    grid-template-columns: 1fr;
+  }
+
+  .section-A h6,
+  .section-A h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  .section-A p {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+}
