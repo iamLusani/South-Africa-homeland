@@ -184,3 +184,17 @@ footer a:hover {
     margin-left: 10px;
   }
 }
+.section-B {
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px;
+  margin-top: 0 auto;
+}
+.section-B h2 {
+  text-align: center;
+  font-size: 50px;
+}
+.grid .grid-col-3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
