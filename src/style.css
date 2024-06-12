@@ -1,28 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: 89%;
+  width: 100%;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero h1 {
+  position: absolute;
+  bottom: 40%;
+  left: 6%;
+  transform: translate(-20%, -70%);
+  text-shadow: 1px 1px 2px rgb(192, 3, 34);
+}
+.hero h2 {
+  position: absolute;
+  bottom: 25%;
+  left: 15%;
+  transform: translate(-20%, -70%);
+  text-shadow: 1px 1px 2px rgb(192, 3, 34);
+}
+button {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translate(-20%, -70%);
+}
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
-    url(https://th.bing.com/th/id/R.1fa0a4aa5c86c82583012398a1e09fd1?rik=KgQoa%2bM37mcheQ&riu=http%3a%2f%2fgreatstaytravel.co.za%2fwp-content%2fuploads%2f2019%2f02%2flimpo-1.jpg&ehk=PM1anqTPj2MjFMzdCPdPRAva7Rk4bna4oBs5p2pJz2Y%3d&risl=&pid=ImgRaw&r=0.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: antiquewhite;
+  color: rgb(253, 253, 250);
   text-align: center;
-  padding: 160px;
-  border-radius: 20px;
   font-weight: 900;
-  max-width: 100%;
-  margin: 0 auto;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(12, 12, 12);
 }
 body {
   background: rgb(0, 0, 15);
 }
 h1 {
-  font-size: 70px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 900;
+  font-size: 80px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 header button {
   padding: 10px;
   width: 200px;
-  background-color: rgb(207, 252, 140);
+  background-color: rgba(253, 252, 255, 0.418);
   border: none;
   border-radius: 10px;
   opacity: 80%;
@@ -81,12 +112,13 @@ footer ul {
 footer a {
   color: rgb(123, 238, 152);
   text-decoration: none;
+  font-size: 16px;
 }
 footer a:hover {
   text-decoration: underline;
 }
 
-.container {
+.holder {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-gap: 20px;
@@ -94,17 +126,17 @@ footer a:hover {
 }
 
 @media (min-width: 388px) {
-  .container {
+  .holder {
     grid-template-columns: 1fr;
   }
 }
 @media (max-width: 1500px) {
-  .container {
+  .holder {
     grid-template-columns: 2fr 2fr 2fr;
   }
 }
 @media (max-width: 896px) {
-  .container {
+  .holder {
     grid-template-columns: 1fr;
     max-width: 100%;
   }
@@ -184,17 +216,24 @@ footer a:hover {
     margin-left: 10px;
   }
 }
-.section-B {
-  background-color: rgb(238, 238, 238);
-  border-radius: 10px;
-  margin-top: 0 auto;
+.left {
+  float: left;
 }
-.section-B h2 {
+.heading-1 {
+  color: rgb(79, 240, 15);
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(250, 247, 247, 0.12) 0px -12px 30px, rgb(248, 246, 246) 0px 4px 6px,
+    rgba(250, 247, 247, 0.17) 0px 12px 13px, rgb(248, 245, 245) 0px -3px 5px;
+}
+.section-C h1 {
   text-align: center;
-  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.grid .grid-col-3{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+.section-C img {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 10px;
+  max-width: 100%;
 }
